@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh; /* Adjust height as needed */
-     background-image: url('/public/img/hero.jpg'); /*Replace with your image URL */
+     background-image: url('/hero.jpg'); /*Replace with your image URL */
     /* background-image: url('./img/About.jpg'); */
     background-size: cover; /* Ensures the image covers the section */
     background-position: center; /* Centers the image */

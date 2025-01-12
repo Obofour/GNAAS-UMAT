@@ -911,7 +911,7 @@ video {
   align-items: center;
   height: 100vh;
   /* Adjust height as needed */
-  background-image: url('/public/img/hero.jpg');
+  background-image: url('/hero.jpg');
   /*Replace with your image URL */
   /* background-image: url('./img/About.jpg'); */
   background-size: cover;
