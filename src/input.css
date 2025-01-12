@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.welcome-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust height as needed */
+     background-image: url('./img/hero.jpg'); /*Replace with your image URL */
+    /* background-image: url('./img/About.jpg'); */
+    background-size: cover; /* Ensures the image covers the section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repetition of the image */
+    background-attachment: fixed; /* Makes the background fixed while scrolling */
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Improves text contrast */
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    /* background: transparent; */
+    opacity: 1.0;
+}
+/* @layer utilities{
+    .section-min-height{
+        min-height: calc(100vh - 68px);
+    }
+} */
+@layer utilities {
+    .section-min-height {
+        min-height: calc(100vh - 68px)
+    }
+
+    .toggle-btn {
+        @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg]
+    }
+}
+.glass{
+    background: transparent;
+    backdrop-filter:blur(10px);
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+.full-page{
+    height: 100vh; /* Adjust height as needed */
+}

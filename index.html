@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GNAAS-UMAT</title>
+    <link rel="stylesheet" href="../public/output.css" />
+    <link rel="shortcut icon" href="./favicon.jpg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="/public/main.js"></script>
+    <style>
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+    </style>
+  </head>
+  <body id="home">
+    <!-- Header -->
+    <header class="bg-yellow-300 text-white sticky top-0 z-10">
+      <section class="mx-auto p-1 flex justify-between items-center">
+        <div class="flex">
+          <img
+            class="sm:w-10 w-10 mx-1"
+            src="./public/img/Logo.jpg"
+            alt="Logo"
+            id="home"
+          />
+          <p class="font-bold text-xl sm:text-2xl shadow-3xl">
+            <a href="#home">GNAAS- UMAT</a>
+          </p>
+        </div>
+        <div>
+          <button
+            id="hamburger-button"
+            class="text-3xl md:hidden cursor:pointer relative w-8 h-8"
+          >
+            &#9776;
+          </button>
+          <nav class="hidden md:block space-x-8 text-xl mx-4" aria-label="main">
+            <a
+              href="#home"
+              class="w-full text-center py-6 hover:opacity-90 font-semibold"
+              >Home</a
+            >
+            <a href="#about" class="hover:opacity-90 font-semibold">About Us</a>
+            <a href="#testimonials" class="hover:opacity-90 font-semibold"
+              >Testimonials</a
+            >
+            <div class="relative inline-block dropdown">
+              <a href="#department" class="hover:opacity-90 font-semibold"
+                >Department
+                <i class="fas fa-caret-down "></i
+              ></a>
+              <div
+                class="absolute hidden bg-gray-300 text-black pt-1 dropdown-menu "
+              >
+                <a
+                  href="#sabbath school"
+                  class="block px-4 py-2 hover:bg-yellow-400"
+                  >Sabbath School</a
+                >
+                <a
+                  href="#music department"
+                  class="block px-4 py-2 hover:bg-yellow-400"
+                  >Music Department</a
+                >
+                <a
+                  href="#adventist youth ministries"
+                  class="block px-4 py-2 hover:bg-yellow-400"
+                  >Adventist Youth Ministries</a
+                >
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+  
+      <!-- Mobile Navbar -->
+      <section
+        id="mobile-menu"
+        class="absolute top-68 bg-black w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden"
+      >
+        <nav
+          class="flex flex-col min-h-screen items-center py-8"
+          aria-label="mobile"
+        >
+          <a
+            href="#home"
+            class="w-full text-center py-6 hover:bg-gray-700 hover:opacity-90"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="w-full text-center hover:bg-gray-700 py-6 hover:opacity-90"
+            >About Us</a
+          >
+          <a
+            href="#testimonials"
+            class="w-full text-center hover:bg-gray-700 py-6 hover:opacity-90"
+            >Testimonials</a
+          >
+          <div class="relative inline-block w-full text-center dropdown py-6">
+            <a href="#department" class="w-full text-center py-6 hover:opacity-90"
+              >Department <i class="fas fa-caret-down"></i
+            ></a>
+            <div
+              class="absolute hidden bg-black text-white pt-3 w-full dropdown-menu"
+            >
+              <a
+                href="#sabbath school"
+                class="block px-4 py-2 hover:bg-gray-700 text-2xl mt-2"
+                >Sabbath School</a
+              >
+              <a
+                href="#music department"
+                class="block px-4 py-2 hover:bg-gray-700 text-2xl mt-2"
+                >Music Department</a
+              >
+              <a
+                href="#adventist youth ministries"
+                class="block px-4 py-2 hover:bg-gray-700 text-2xl mt-2"
+                >Adventist Youth Ministries</a
+              >
+            </div>
+          </div>
+        </nav>
+      </section>
+    </header>
+  
+    <!-- Main Body -->
+    <main id="home">
+      <section class="welcome-section shadow-xl">
+        <p class="font-bold text-4xl sm:text-7xl">
+          WELCOME TO
+          <span class="text-teal-200"
+            >GNAAS<span class="text-white font-bold">-</span>UMAT</span
+          >
+          <br />
+          <button
+            class="mt-10 bg-teal-700 hover:bg-green-200 focus:outline-none active:bg-teal-500 text-white py-2 px-4 rounded-xl text-2xl sm:text-3xl uppercase tracking-wider font-semibold"
+          >
+            <p id="contact"><a>Worship with Us</a></p>
+          </button>
+        </p>
+      </section>
+      <hr class="mx-auto w-1/2 bg-black" />
+  
+      <!-- ABOUT -->
+      <h2 class="text-4xl mt-10 font-bold text-center sm:text-5xl mb-6">
+        About Us
+      </h2>
+  
+      <div class="bg-gray-100 mt-10 shadow-xl ">
+        <section
+          id="about"
+          class="widescreen:section-min-height tallscreen:section-min-height mb-12 flex scroll-mt-40 flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row"
+        >
+          <article class="sm:w-1/2">
+            <h2
+              class="max-w-md text-center text-4xl font-bold text-black sm:text-left sm:text-5xl"
+            >
+              We Boldy Go
+              <span class="text-indigo-700">Where No Rocket</span>
+              Has Gone Before...
+            </h2>
+            <p class="mt-4 max-w-md text-center text-2xl text-black sm:text-left">
+              We're building rockets for the next century today. From the moon to
+              Mars, Jupiter and beyond...
+            </p>
+            <p class="mt-4 max-w-md text-center text-2xl text-black sm:text-left">
+              Think Acme Rockets.
+            </p>
+          </article>
+          <img
+            class="w-1/2"
+            src="./public/img/About.jpg"
+            alt="GNAAS-UMAT Church"
+          />
+        </section>
+      </div>
+      <hr class="mx-auto w-1/2 bg-black" />
+  
+      <!-- Testimonies -->
+      <h2 class="mt-12 text-center text-4xl font-bold text-black sm:text-5xl">
+        Testimonials
+      </h2>
+      <div class="bg-gray-200 mt-10 shadow-xl">
+        <section
+          id="testimonials"
+          class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6"
+        >
+          <figure class="my-12">
+            <blockquote class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8">
+              <p
+                class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] sm:text-3xl"
+              >
+                Acme has always been there for me. Their Explorer rocket arrived
+                in a wooden crate as expected. Life-long customer! A++ shopping
+                experience.
+              </p>
+            </blockquote>
+            <figcaption
+              class="mt-2 text-right text-xl italic text-black sm:text-2xl"
+            >
+              &#8212;Wile E. Coyote, Genius
+            </figcaption>
+          </figure>
+          <figure class="my-12">
+            <blockquote class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8">
+              <p
+                class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] sm:text-3xl"
+              >
+                The Acme Adventurer Rocket has thwarted my Illudium Q-36 Explosive
+                Space Modulator on several occassions.
+                <span class="italic">This makes me very, very angry!</span>
+                Nevertheless, K-9 and I have awarded Acme the Martian contract for
+                space exploration rockets based on Acme's quality and sturdy
+                designs.
+              </p>
+            </blockquote>
+            <figcaption
+              class="mt-2 text-right text-xl italic text-black sm:text-2xl"
+            >
+              &#8212;Marvin The Martian &amp; K-9
+            </figcaption>
+          </figure>
+          <figure class="my-12">
+            <blockquote class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8">
+              <p
+                class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] sm:text-3xl"
+              >
+                I knew I not only wanted &#8212;
+                <span class="italic">I needed</span> &#8212; Acme's Infinity
+                Rocket for my mission in space. Acme delivered in one day! Nothing
+                says <q class="italic">Take me to your leader</q> like Acme's
+                Infinity Rocket! 💯
+              </p>
+            </blockquote>
+            <figcaption
+              class="mt-2 text-right text-xl italic text-black sm:text-2xl"
+            >
+              &#8212;Buzz Lightyear
+            </figcaption>
+          </figure>
+        </section>
+      </div>    
+    </main>
+  
+    <hr class="mx-auto w-1/2 bg-black" />
+  
+    <!-- footer -->
+    <footer id="contact" class="bg-teal-700 text-white text-xl mt-10">
+      <section class="mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
+        <address>
+          <h2>GNAAS-UMaT, Tarkwa</h2>
+          inside UMaT,Tarkwa Campus <br />
+          Email: <a href="mailto:#">animmichaelasante@gmail.com</a><br />
+          Phone: <a href="tel:#">(555) 555-5555</a>
+        </address>
+  
+        <!-- Bottom nav -->
+        <nav class="hidden md:block space-x-8 text-xl mx-4" aria-label="main">
+          <a href="#home" class="w-full text-center py-6 hover:opacity-90"
+            >Home</a
+          >
+          <a href="#about" class="hover:opacity-90 font-semibold">About Us</a>
+          <a href="#testimonials" class="hover:opacity-90 font-semibold"
+            >Testimonials</a
+          >
+  
+          <a href="#" class="hover:opacity-90 font-semibold">Follow us on:#</a>
+        </nav>
+        <div class="sm:hidden">
+          <a href="#" class="hover:opacity-90 font-semibold">Follow us on:#</a>
+        </div>
+  
+        <div class="flex flex-row sm:gap-2">
+          <p class="text-right">Copyright &copy; <span id="date"></span></p>
+          <p>All right Reserved</p>
+        </div>
+      </section>
+    </footer>
+    <script>
+      document.getElementById("date").innerHTML = new Date().getFullYear();
+    </script>
+  </body>
+  
+</html>
