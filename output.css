@@ -1003,30 +1003,6 @@ video {
   background-color: transparent;
 }
 
-.welcome-section{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  /* Adjust height as needed */
-  background-size: cover;
-  /* Ensures the image covers the section */
-  background-position: center;
-  /* Centers the image */
-  background-repeat: no-repeat;
-  /* Prevents repetition of the image */
-  background-attachment: fixed;
-  /* Makes the background fixed while scrolling */
-  color: white;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-  /* Improves text contrast */
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  /* background: transparent; */
-  /* opacity: 1.0; */
-}
-
 /* @layer utilities{
     .section-min-height{
         min-height: calc(100vh - 68px);
