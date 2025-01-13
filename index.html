@@ -63,8 +63,8 @@
           >
             <!-- &#9776; -->
             <div
-            class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']">
-          </div>
+              class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']"
+            ></div>
           </button>
 
           <!-- Desktop Nav -->
@@ -72,16 +72,18 @@
             <a
               href="#home"
               class="w-full text-center py-6 hover:opacity-90 font-semibold"
-              ><i class="fas fa-home  text-lg"></i> Home</a
+              ><i class="fas fa-home text-lg"></i> Home</a
             >
-            <a href="#about" class="hover:opacity-90 font-semibold"><i class="fas fa-info-circle  text-lg"></i>
-              About Us</a>
-            <a href="#testimonials" class="hover:opacity-90 font-semibold"
-              >   <i class="fas fa-comments  text-lg"></i> Testimonials</a
+            <a href="#about" class="hover:opacity-90 font-semibold"
+              ><i class="fas fa-info-circle text-lg"></i> About Us</a
+            >
+            <a href="#testimonials" class="hover:opacity-90 font-semibold">
+              <i class="fas fa-comments text-lg"></i> Testimonials</a
             >
             <div class="relative inline-block dropdown">
               <a href="#department" class="hover:opacity-90 font-semibold"
-                ><i class="fas fa-building  text-lg"></i> Department <i class="fas fa-caret-down"></i
+                ><i class="fas fa-building text-lg"></i> Department
+                <i class="fas fa-caret-down"></i
               ></a>
               <div
                 class="absolute hidden bg-gray-300 text-black pt-1 dropdown-menu"
@@ -89,17 +91,18 @@
                 <a
                   href="#sabbath school"
                   class="block px-4 py-2 hover:bg-yellow-400"
-                  ><i class="fas fa-book-bible  text-lg"></i> Sabbath School</a
+                  ><i class="fas fa-book-bible text-lg"></i> Sabbath School</a
                 >
                 <a
                   href="#music department"
                   class="block px-4 py-2 hover:bg-yellow-400"
-                  ><i class="fas fa-music  text-lg"></i> Music Department</a
+                  ><i class="fas fa-music text-lg"></i> Music Department</a
                 >
                 <a
                   href="#adventist youth ministries"
                   class="block px-4 py-2 hover:bg-yellow-400"
-                  ><i class="fas fa-users  text-lg"></i> Adventist Youth Ministries</a
+                  ><i class="fas fa-users text-lg"></i> Adventist Youth
+                  Ministries</a
                 >
               </div>
             </div>
@@ -108,58 +111,69 @@
       </section>
 
       <!-- Mobile Navbar -->
-      <section id="mobile-menu"
-      class="top-68 justify-center absolute hidden w-full origin-top animate-open-menu flex-col bg-black text-5xl">
-      <!-- <button class="text-8xl self-end px-6">
+      <section
+        id="mobile-menu"
+        class="top-68 justify-center absolute hidden w-full origin-top animate-open-menu flex-col bg-black text-5xl"
+      >
+        <!-- <button class="text-8xl self-end px-6">
                 &times;
             </button> -->
-            <nav
-            class="flex flex-col min-h-screen items-center py-8"
-            aria-label="mobile"
+        <nav
+          class="flex flex-col min-h-screen items-center py-8"
+          aria-label="mobile"
+        >
+          <a
+            href="#home"
+            class="w-full text-center py-6 hover:bg-gray-700 hover:opacity-90"
+            ><i class="fas fa-home sm:text-xl"></i> Home</a
           >
+          <a
+            href="#about"
+            class="w-full text-center hover:bg-gray-700 py-6 hover:opacity-90"
+          >
+            <i class="fas fa-info-circle sm:text-xl"></i> About Us</a
+          >
+          <a
+            href="#testimonials"
+            class="w-full text-center hover:bg-gray-700 py-6 hover:opacity-90"
+            ><i class="fas fa-comments sm:text-xl"></i> Testimonials</a
+          >
+          <div class="relative inline-block w-full text-center dropdown py-6">
             <a
-              href="#home"
-              class="w-full text-center py-6 hover:bg-gray-700 hover:opacity-90"
-              ><i class="fas fa-home  sm:text-xl"></i> Home</a
+              href="#department"
+              class="w-full text-center py-6 hover:opacity-90 dropdown-menu no-animation"
+              ><i class="fas fa-building sm:text-xl"></i> Department
+              <i class="fas fa-caret-down"></i
+            ></a>
+            <div
+              class="absolute hidden bg-black text-white pt-3 w-full dropdown-menu"
             >
-            <a
-              href="#about"
-              class="w-full text-center hover:bg-gray-700 py-6 hover:opacity-90"
-              >  <i class="fas fa-info-circle  sm:text-xl"></i> About Us</a
-            >
-            <a
-              href="#testimonials"
-              class="w-full text-center hover:bg-gray-700 py-6 hover:opacity-90"
-              ><i class="fas fa-comments  sm:text-xl"></i> Testimonials</a
-            >
-            <div class="relative inline-block w-full text-center dropdown py-6">
               <a
-                href="#department"
-                class="w-full text-center py-6 hover:opacity-90 dropdown-menu no-animation "
-                ><i class="fas fa-building  sm:text-xl"></i> Department <i class="fas fa-caret-down"></i
-              ></a>
-              <div
-                class="absolute hidden bg-black text-white pt-3 w-full dropdown-menu"
+                href="#sabbath school"
+                class="block px-4 py-2 hover:bg-gray-700 text-2xl mt-2"
               >
-                <a
-                  href="#sabbath school"
-                  class="block px-4 py-2 hover:bg-gray-700 text-2xl mt-2"
-                  > <i class="fas fa-book-bible  text-lg"></i> Sabbath School</a
-                >
-                <a
-                  href="#music department"
-                  class="block px-4 py-2 hover:bg-gray-700 text-2xl mt-2"
-                  ><i class="fas fa-music  text-lg"></i> Music Department</a
-                >
-                <a
-                  href="#adventist youth ministries"
-                  class="block px-4 py-2 hover:bg-gray-700 text-2xl mt-2"
-                  ><i class="fas fa-users text-lg"></i> Adventist Youth Ministries</a
-                >
-              </div>
+                <i class="fas fa-book-bible text-lg"></i> Sabbath School</a
+              >
+              <a
+                href="#music department"
+                class="block px-4 py-2 hover:bg-gray-700 text-2xl mt-2"
+                ><i class="fas fa-music text-lg"></i> Music Department</a
+              >
+              <a
+                href="#adventist youth ministries"
+                class="block px-4 py-2 hover:bg-gray-700 text-2xl mt-2"
+                ><i class="fas fa-users text-lg"></i> Adventist Youth
+                Ministries</a
+              >
             </div>
-          </nav>
-    </section>
+          </div>
+          <a
+            href="#footer"
+            class="w-full text-center hover:bg-gray-700 py-6 hover:opacity-90"
+            ><i class="fas fa-phone sm:text-xl"></i> Contact Us</a
+          >
+        </nav>
+      </section>
     </header>
 
     <!-- Main Body -->
@@ -294,24 +308,30 @@
     <hr class="mx-auto w-1/2 bg-black" />
 
     <!-- footer -->
-    <footer id="contact" class="bg-teal-700 text-white text-xl mt-10">
+    <footer id="footer" class="bg-teal-700 text-white text-xl mt-10">
       <section class="mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
         <address>
-          <h2>GNAAS-UMaT, Tarkwa</h2>
+          <h2><i class="fas fa-map-marker-alt text-lg"></i> GNAAS-UMaT, Tarkwa</h2>
           inside UMaT,Tarkwa Campus <br />
-          Email: <a href="mailto:#">animmichaelasante@gmail.com</a><br />
-          Phone: <a href="tel:#">(555) 555-5555</a>
+          <i class="fas fa-envelope  text-lg"></i>  Email: <a href="mailto:#">animmichaelasante@gmail.com</a><br />
+          <i class="fas fa-phone-alt  text-lg"></i> Phone: <a href="tel:#">(555) 555-5555</a>
         </address>
 
         <!-- Bottom nav -->
         <nav class="hidden md:block space-x-8 text-xl mx-4" aria-label="main">
-          <a href="#home" class="w-full text-center py-6 hover:opacity-90"
-            >Home</a
-          >
-          <a href="#about" class="hover:opacity-90 font-semibold">About Us</a>
-          <a href="#testimonials" class="hover:opacity-90 font-semibold"
-            >Testimonials</a
-          >
+          <a
+          href="#home"
+          class="w-full text-center py-6 hover:opacity-90 font-semibold"
+          ><i class="fas fa-home text-lg"></i> Home</a
+        >
+        <a href="#about" class="hover:opacity-90 font-semibold"
+          ><i class="fas fa-info-circle text-lg"></i> About Us</a
+        >
+        <a href="#testimonials" class="hover:opacity-90 font-semibold">
+          <i class="fas fa-comments text-lg"></i> Testimonials</a
+        >
+
+          
 
           <a href="#" class="hover:opacity-90 font-semibold">Follow us on:#</a>
         </nav>
