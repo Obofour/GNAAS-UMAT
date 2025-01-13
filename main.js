@@ -12,18 +12,20 @@ const initApp = () => {
     mobileMenu.addEventListener('click', toggleMenu)
 }
 
-// document.addEventListener('DOMContentLoaded', initApp)
-// document.querySelectorAll('.dropdown').forEach(dropdown => {
-//     dropdown.addEventListener('click', function() {
+// document.addEventListener('DOMContentLoaded', function() {
+//     document.querySelectorAll('.dropdown').forEach(dropdown => {
+//       dropdown.addEventListener('click', function() {
 //         this.querySelector('.dropdown-menu').classList.toggle('hidden');
+//       });
 //     });
-// });
+//   });
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.dropdown').forEach(dropdown => {
-      dropdown.addEventListener('click', function() {
-        this.querySelector('.dropdown-menu').classList.toggle('hidden');
-      });
+  document.querySelectorAll('.dropdown').forEach(dropdown => {
+    dropdown.addEventListener('click', function(event) {
+      event.preventDefault();
+      this.querySelector('.dropdown-menu').classList.toggle('hidden');
     });
   });
+});
 document.addEventListener('DOMContentLoaded',initApp)
 document.getElementById('date').innerHTML=new Date().getFullYear()
